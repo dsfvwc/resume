@@ -40,9 +40,9 @@ img {
     list-style: none;
 }
 
-/* .link {
+.link {
     text-decoration: none;
-} */
+}
 
 /* .conteiner {
     width: 1200px;
@@ -69,6 +69,7 @@ img {
     flex-direction: column;
 
     width: 541px;
+    height: 730px;
     background-color:#30cfcf1e;
     margin-left: auto;
     margin-right: auto;
@@ -87,8 +88,13 @@ img {
     background-color: var(--resume-contact-background-color);
 }
 
+.resume__icon {
+    fill: #ffffff;
+}
+
 .resume-third__title,
-.resume-contact__text {
+.resume-contact__text,
+.resume__text {
     font-size: 14px;
     line-height: calc(15 / 12);
     letter-spacing: 0em;
@@ -102,7 +108,14 @@ img {
 }
 
 .resume-contact__text {
+    display: inline-flex;
+    gap: 5px;
     font-weight: 300;
+}
+
+.resume-contact__text:hover,
+.resume-contact__text:focus {
+    color: var(--resume-info-dark-color);
 }
 
 .resume-third__title::after {
@@ -163,7 +176,7 @@ img {
     padding: 26px 7px 29px 19px;
 
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: calc(13 / 11);
     letter-spacing: 0.18em;
     text-align: left;
@@ -171,6 +184,22 @@ img {
     color: var(--resume-info-light-color);
     background-color: #30cfcfa7;
     border-radius: 10px;
+}
+
+.resume-about__link {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--resume-info-dark-color);
+}
+
+.resume-about__link:hover,
+.resume-about__link:focus {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--resume-info-dark-color);
 }
 
 .resume-info__text {
