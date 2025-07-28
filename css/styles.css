@@ -44,15 +44,20 @@ img {
     display: flex;
     flex-direction: column;
 
-    width: 541px;
     height: 730px;
     background-color:#30cfcf1e;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+        width: 541px;
+    }
 }
 
 .resume__columns {
-    display: flex;
+    display: block;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
 
 
@@ -66,6 +71,13 @@ img {
     background-color: var(--resume-contact-background-color);
 }
 
+.resume__photo {
+@media screen and (max-width: 767.98px) {
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
 .resume__icon {
     fill: #ffffff;
 }
@@ -76,8 +88,18 @@ img {
     font-size: 14px;
     line-height: calc(15 / 12);
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: var(--resume-contact-color);
+    @media screen and (min-width: 768px) {
+    text-align: left;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .resume-contact__list {
+    display: flex;
+    justify-content: center;
+    }
 }
 
 .resume-third__title {
@@ -93,6 +115,7 @@ img {
 
 .resume-contact__text:hover,
 .resume-contact__text:focus {
+    font-size: 15px;
     color: var(--resume-info-dark-color);
 }
 
