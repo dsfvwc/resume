@@ -1,0 +1,212 @@
+:root {
+    --resume-contact-color: #ffffff;
+    --resume-contact-background-color: #30CFCF;
+    --resume-info-main-color: #4A4A4A;
+    --resume-info-dark-color: #1F3A3D;
+    --resume-info-light-color: #F9FBFB;
+    --resume-info-background-color: #DFF5F4;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    color: #1F3A3D;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin: 0;
+}
+
+/* button {
+    cursor: pointer;
+} */
+
+img {
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+/* .link {
+    text-decoration: none;
+} */
+
+/* .conteiner {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+} */
+
+/* .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
+
+.resume {
+    display: flex;
+    flex-direction: column;
+
+    width: 541px;
+    background-color:#30cfcf1e;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume__columns {
+    display: flex;
+}
+
+/* -------------------------------resume__contact------------------------------- */
+
+
+
+.resume__contact {
+    padding: 46px 32px 17px 32px;
+    background-color: var(--resume-contact-background-color);
+}
+
+.resume-third__title,
+.resume-contact__text {
+    font-size: 14px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--resume-contact-color);
+}
+
+.resume-third__title {
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+.resume-contact__text {
+    font-weight: 300;
+}
+
+.resume-third__title::after {
+    content: '';
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    
+    width: 100%;
+    height: 1px;
+    background-color: var(--resume-contact-color);
+}
+
+
+
+/* -------------------------------resume__info------------------------------- */
+
+
+
+.resume__info {
+    padding: 61px 17px 16px 39px;
+}
+
+.resume-main__title {
+    font-weight: 900;
+    font-size: 29px;
+    line-height: calc(35 / 29);
+    letter-spacing: 0em;
+    text-align: left;
+    
+    color: var(--resume-info-dark-color);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.resume-info__position {
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-align: left;
+    color: var(--resume-info-dark-color);
+
+    margin-top: 2px;
+    margin-bottom: 27px;
+}
+
+.resume-second__title {
+    margin-bottom: 7px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--resume-info-dark-color);
+}
+
+.resume__about {
+    padding: 26px 7px 29px 19px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(13 / 11);
+    letter-spacing: 0.18em;
+    text-align: left;
+
+    color: var(--resume-info-light-color);
+    background-color: #30cfcfa7;
+    border-radius: 10px;
+}
+
+.resume-info__text {
+    margin-top: 30px;
+    margin-bottom: 6px;
+
+    font-weight: 600;
+    font-size: 9px;
+    line-height: calc(11 / 9);
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--resume-info-main-color);
+}
+
+.resume-info__text::after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    
+    width: 100%;
+    height: 1px;
+    background-color: var(--resume-info-main-color);
+}
+
+.resume-info_skills {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    letter-spacing: 0.18em;
+    text-align: left;
+
+    color: var(--resume-info-main-color);
+}
+
+.work-experience {
+    padding: 20px 30px;
+    background-color: var(--resume-info-background-color);
+}
